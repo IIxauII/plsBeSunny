@@ -10,6 +10,10 @@
 # install dependencies
 npm install
 
+#add custom font for weather icons
+download https://github.com/websygen/owfont/archive/master.zip
+unpack and save `owfont-master` under `src/assets/css`
+
 # serve with hot reload at localhost:8080
 npm run dev
 
