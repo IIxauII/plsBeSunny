@@ -81,6 +81,7 @@ export default {
 <style lang="scss">
     @import url('https://fonts.googleapis.com/css?family=Farsan|Shrikhand');
     @import '../assets/css/owfont-master/css/owfont-regular.css';
+    $colorRandom: rgb(random(255), random(255), random(255));
     .weather {
         display: flex;
         width: 100%;
@@ -104,6 +105,7 @@ export default {
             order: 1;
             font-family: 'Shrikhand', cursive;
             font-size: 4rem;
+            color: $colorRandom;
         }
         &__icon {
             order: 2;
