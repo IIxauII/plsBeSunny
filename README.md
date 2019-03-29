@@ -1,6 +1,8 @@
 # plsbesunny
 
-> A Vue.js project
+> A simple weather app built with vue.js
+
+![preview image of application](https://raw.githubusercontent.com/IIxauII/plsbesunny/master/preview/previewWeatherApp.png)
 
 ## Build Setup
 
