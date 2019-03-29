@@ -32,7 +32,7 @@ export default {
             // eslint-disable-next-line
             console.log(data.weather[0].icon);
             this.location = data.name;
-            this.temperature = Math.round(data.main.temp) + ' C°';
+            this.temperature = Math.round(data.main.temp) + ' °C';
             this.type = data.weather[0].description;
             const conditionCode = data.weather[0].id;
             const weatherImg = document.querySelector('.weather__icon__img');
