@@ -11,7 +11,7 @@
 npm install
 ```
 
-#### add custom font for weather icons
+#### add font for weather icons
 [download owfont](https://websygen.github.io/owfont/)
 unpack and save `owfont-master` under `src/assets/css`
 
