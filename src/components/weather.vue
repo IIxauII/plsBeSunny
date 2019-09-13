@@ -79,45 +79,102 @@ export default {
 };
 </script>
 <style lang="scss">
-    @import url('https://fonts.googleapis.com/css?family=Farsan|Shrikhand');
-    @import '../assets/css/owfont-master/css/owfont-regular.css';
-    $colorRandom: rgb(random(255), random(255), random(255));
-    .weather {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        font-family: 'Farsan', cursive;
-        color: white;
-        &__location,
-        &__icon,
-        &__temperature,
-        &__type {
-            flex-basis: 50%;
-            align-self: center;
-            text-align: center;
-            font-size: 1.5rem;
-        }
-        &__location {
-            order: 1;
-            font-family: 'Shrikhand', cursive;
+/* gujarati */
+@font-face {
+    font-family: 'Farsan';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Farsan Regular'), local('Farsan-Regular'), url('../assets/css/fonts/VEMwRoJ0vY_zsyzKxqWo5jbtrMOL.woff2') format('woff2');
+    unicode-range: U+0964-0965, U+0A80-0AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839;
+}
+/* vietnamese */
+@font-face {
+    font-family: 'Farsan';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Farsan Regular'), local('Farsan-Regular'), url('../assets/css/fonts/VEMwRoJ0vY_zsyzK0qWo5jbtrMOL.woff2') format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Farsan';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Farsan Regular'), local('Farsan-Regular'), url('../assets/css/fonts/VEMwRoJ0vY_zsyzK06Wo5jbtrMOL.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Farsan';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Farsan Regular'), local('Farsan-Regular'), url('../assets/css/fonts/VEMwRoJ0vY_zsyzK3aWo5jbtrA.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+/* gujarati */
+@font-face {
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Shrikhand Regular'), local('Shrikhand-Regular'), url('../assets/css/fonts/a8IbNovtLWfR7T7bMJwrGIKR8Ttcte1q.woff2') format('woff2');
+    unicode-range: U+0964-0965, U+0A80-0AFF, U+200C-200D, U+20B9, U+25CC, U+A830-A839;
+}
+/* latin-ext */
+@font-face {
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Shrikhand Regular'), local('Shrikhand-Regular'), url('../assets/css/fonts/a8IbNovtLWfR7T7bMJwrDYKR8Ttcte1q.woff2') format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+    font-family: 'Shrikhand';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Shrikhand Regular'), local('Shrikhand-Regular'), url('../assets/css/fonts/a8IbNovtLWfR7T7bMJwrA4KR8TtctQ.woff2') format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+        U+2215, U+FEFF, U+FFFD;
+}
+@import '../assets/css/owfont-master/css/owfont-regular.css';
+$colorRandom: rgb(random(255), random(255), random(255));
+.weather {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Farsan', cursive;
+    color: white;
+    &__location,
+    &__icon,
+    &__temperature,
+    &__type {
+        flex-basis: 50%;
+        align-self: center;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    &__location {
+        order: 1;
+        font-family: 'Shrikhand', cursive;
+        font-size: 4rem;
+        color: $colorRandom;
+    }
+    &__icon {
+        order: 2;
+        &__img {
             font-size: 4rem;
-            color: $colorRandom;
-        }
-        &__icon {
-            order: 2;
-            &__img {
-                font-size: 4rem;
-            }
-        }
-        &__temperature {
-            order: 3;
-        }
-        &__type {
-            order: 4;
         }
     }
+    &__temperature {
+        order: 3;
+    }
+    &__type {
+        order: 4;
+    }
+}
 </style>

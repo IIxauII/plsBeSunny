@@ -25,6 +25,7 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    'max-len': 0,
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       js: 'never',
@@ -45,7 +46,7 @@ module.exports = {
       optionalDependencies: ['test/unit/index.js']
     }],
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',    
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'prefer-template': 'off',
     'indent': ["error", 4],
     'linebreak-style': 'off',
