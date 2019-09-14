@@ -1,34 +1,29 @@
-# plsbesunny
+# fresh
 
-> A simple weather app built with vue.js
-
-![preview image of application](https://raw.githubusercontent.com/IIxauII/plsbesunny/master/preview/previewWeatherApp.png)
-
-## Setup & Build
-
-```bash
-# install dependencies
+## Project setup
+```
 npm install
 ```
 
-#### add font for weather icons
-[download owfont](https://websygen.github.io/owfont/)
-unpack and save `owfont-master` under `src/assets/css`
-
-
-```bash
-# serve with hot reload at localhost:8080
-npm run dev
+### Compiles and hot-reloads for development
+```
+npm run serve
 ```
 
-```bash
-# build for production with minification
+### Compiles and minifies for production
+```
 npm run build
 ```
 
-```bash
-# build for production and view the bundle analyzer report
-npm run build --report
+### Run your tests
+```
+npm run test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
