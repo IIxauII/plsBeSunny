@@ -59,6 +59,7 @@ export default {
                 });
         },
         buildApiCall(lat, lon) {
+            // do not save api keys like this :reee:
             const key = '102313f616cf36cbc7fa381982977f2d';
             const apiString = 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + key + '&units=metric';
             // eslint-disable-next-line
